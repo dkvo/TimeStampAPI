@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Time Stamp API</title>
+</head>
+<body>
+    <h1>API Project: Time Stamp API</h1>
+    <div class="explanation">
+        <ol>
+            <h4>User Direction:</h4>
+            <li>The API end point is <strong>GET https://timestmp-api.herokuapp.com/timestamp/:date?</strong>.</li>
+            <li>This API take user provided date string in date<strong>(YYYY-MM-DD, YYYY,MM,DD etc.)</strong> format and unix epoch<strong>(integer)</strong> format and return both unix epoch and UTC formatted timestamps.</li>
+            <li>If error occur an object with error message "invalid date" will be returned.</li>
+            <li>If no date was provided, the api will retrieve the current date timestamp.</li>
+        </ol>
+        <div class="usage">
+            <h4>Usage:</h4>
+            <a href="https://timestmp-api.herokuapp.com/timestamp/2018-01-23">https://timestmp-api.herokuapp.com/timestamp/2018-01-23</a>
+            <br>
+            <a href="https://timestmp-api.herokuapp.com/timestamp/1535347646303">https://timestmp-api.herokuapp.com/timestamp/1535347646303</a>
+        </div>
+        <div class="output">
+            <h4>Example Output:</h4>
+            <p><strong>{"unix":1535347646303,"utc":"Mon, 27 Aug 2018 05:27:26 GMT"} </strong></p>
+        </div>
+    </div>    
+</body>
+</html>
